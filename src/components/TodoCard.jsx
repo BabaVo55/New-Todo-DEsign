@@ -1,14 +1,14 @@
 import React from 'react'
 
-export default function TodoCard({children}) {
+export default function TodoCard({children, handleDeleteTodos, index, handleEditTodos}) {
   return (
     <li className='TodoCard'>
         {children}
         <div className=''>
-            <button>
+            <button onClick={() => handleEditTodos(index)}>
                 <i className="fa-regular fa-pen-to-square"></i>
             </button>
-            <button>
+            <button onClick={() =>  handleDeleteTodos(index)}>
                 <i className="fa-regular fa-trash-can"></i>
             </button>
         </div>

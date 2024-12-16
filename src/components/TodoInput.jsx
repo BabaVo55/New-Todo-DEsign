@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
-export default function todoInput({handleAddTodos, todos, setTodos}) {
+export default function todoInput({handleAddTodos, todos, setTodos, currentTodo, setCurrentTodo}) {
 
-    const [currentTodo, setCurrentTodo] = useState('')    
+
     function handleChange(e){
         setCurrentTodo(e.target.value);
     }
