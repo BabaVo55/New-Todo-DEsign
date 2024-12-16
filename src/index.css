@@ -44,6 +44,10 @@
   border-radius: 20px;
   font-family: "Indie Flower", cursive;
   font-weight: bold;
+  height: 30px;
+  padding-left: 5px;
+  margin-left: 5px;
+
 
 }
 
@@ -59,20 +63,29 @@
 }
 
 .button:hover{
-  background-color: #5656f7;
+  background-color: #5252e873;
   color: white;
   top: 5px;
   text-align: center;
 }
 
+li{
 
+}
 
 .TodoCard{
   display: flex;
   gap: 1rem;
   height: 100px;
   justify-content: space-between;
-  transition: 6s ease-in;
+  transition: 1s ease-in;
+  align-items: center;
+  background-color: #5252e873;
+  height: 20px;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  
 }
 
 li button {
